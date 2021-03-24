@@ -1,0 +1,30 @@
+#heading{
+    margin-bottom: 70px;
+}
+.Wholesale{
+    padding-top: 60px;
+}
+#fba{
+    background-color: #fafafa;
+    padding: 100px 0px;
+}
+.lean{
+    padding: 25px;
+}
+.pricing{
+    margin-top: -32px;
+}
+#brands{
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 580px) {
+    .one {
+        padding-top: 5px;
+    }
+}
+
+
+
+
+
+
