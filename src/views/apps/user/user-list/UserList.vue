@@ -145,7 +145,7 @@ export default {
           field: 'image',
           filter: true,
           width: 210,
-          cellRendererFramework: 'CellRendererLink'
+           cellRendererFramework: 'CellRendererLink'
         },
         {
           headerName: 'Title',

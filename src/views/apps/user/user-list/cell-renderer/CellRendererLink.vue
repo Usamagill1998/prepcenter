@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center">
-    <vs-avatar :src="'http://prepcenter.techhivedemo.xyz/' + params.data.image" class="flex-shrink-0 mr-2" size="30px" @click="$router.push(url)" />
-    <router-link :to="url" @click.stop.prevent class="text-inherit hover:text-primary">{{ params.value }}</router-link>
+    <vs-avatar :src="'http://prepcenter.techhivedemo.xyz/' + params.data.image" class="flex-shrink-0 mr-2" size="40px"   />
+    <!-- <router-link :to="url" @click.stop.prevent class="text-inherit hover:text-primary">{{ params.value }}</router-link> -->
   </div>
 </template>
 

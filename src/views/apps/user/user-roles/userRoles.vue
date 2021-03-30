@@ -132,7 +132,7 @@ export default {
         {
           headerName: 'ID',
           field: 'id',
-          width: 300,
+          width: 400,
           filter: true,
           checkboxSelection: true,
           headerCheckboxSelectionFilteredOnly: true,
@@ -142,9 +142,16 @@ export default {
           headerName: 'Name',
           field: 'name',
           filter: true,
-          width: 600,
+          width: 400,
        //   cellRendererFramework: 'CellRendererLink'
         },
+
+         {
+          headerName: 'Actions',
+          field: 'transactions',
+          width: 250, 
+          cellRendererFramework: 'CellRendererActions'
+        }
 
       ],
 

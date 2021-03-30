@@ -144,10 +144,23 @@ const baseURL = "http://prepcenter.techhivedemo.xyz"
     })
   },
 
-   deleteSlider({ commit },payload) { 
+  deleteRole({ commit },payload) { 
     return new Promise((resolve, reject) => {
       payload['token'] = token
-      axios.post(baseURL+`/api/cms/slider/delete/${payload}`)
+      axios.post(baseURL+'/api/users/roles/delete',payload)
+      .then((response) => {
+         router.push(router.currentRoute.query.to || '/apps/user/roles')
+        //  commit('SET_USERS', response.data.data.sliders)
+          resolve(response) 
+        }) 
+        .catch((error) => { reject(error) })
+    })
+  },
+
+   deleteSlider({ commit },payload) { 
+    return new Promise((resolve, reject) => {
+      
+      axios.post(baseURL+`/api/cms/slider/delete/${payload}`,{token:token})
       .then((response) => {
      //    router.push(router.currentRoute.query.to || '/apps/user/roles')
         //  commit('SET_USERS', response.data.data.sliders)

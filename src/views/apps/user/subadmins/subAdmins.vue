@@ -167,8 +167,12 @@ export default {
           width: 200,
        //   cellRendererFramework: 'CellRendererLink'
         },
-        
-
+         {
+          headerName: 'Actions',
+          field: 'transactions',
+          width: 250, 
+          cellRendererFramework: 'CellRendererActions'
+        }
       ],
 
       // Cell Renderer Components

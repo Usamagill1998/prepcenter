@@ -39,11 +39,12 @@ export default {
     },
     deleteRecord () {
       /* Below two lines are just for demo purpose */
-      this.showDeleteSuccess()
-
+      // this.showDeleteSuccess() 
       /* UnComment below lines for enabling true flow if deleting user */
        this.$store.dispatch("userManagement/deleteSlider", this.params.data.id)
-         .then(()   => { this.showDeleteSuccess() })
+         .then(()   => { 
+           this.$router.push('/app/sliders')
+           this.showDeleteSuccess() })
          .catch(err => { console.error(err)       })
     },
     showDeleteSuccess () {

@@ -151,6 +151,12 @@ export default {
           filter: true,
           width: 400,
        //   cellRendererFramework: 'CellRendererLink'
+        },
+        {
+          headerName: 'Actions',
+          field: 'transactions',
+          width: 250, 
+          cellRendererFramework: 'CellRendererActions'
         }
       ],
 
