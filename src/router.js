@@ -289,6 +289,25 @@ const router = new Router({
           }
         },
         {
+          path: '/apps/cms/pages/add/:id',
+          name: 'app-cms-pages-add',
+          component: () => import('@/views/apps/cms/addCms/addCms.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'User' },
+              { title: 'List', active: true }
+            ],
+            pageTitle: 'Add Pages', 
+            rule: 'editor'
+          } 
+        },
+        
+        
+        
+
+
+        {
           path: '/apps/slider/add-slider',
           name: 'app-user-edit',
           component: () => import('@/views/apps/user/user-edit/UserEdit.vue'),
